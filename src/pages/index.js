@@ -36,15 +36,6 @@ export const query = graphql`
             label
             description
             img
-            body {
-              ... on PRISMIC_PostBodyText {
-                type
-                label
-                primary {
-                  text
-                }
-              }
-            }
           }
         }
       }

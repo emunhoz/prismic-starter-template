@@ -4,10 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import * as S from '../styles/base'
 
-// Query for the Blog Home content in Prismic
 export const query = graphql`
   {
-    # Field name parameter defines how you can access third party API
     swapi {
       allSpecies(first: 6) {
         name
@@ -16,12 +14,12 @@ export const query = graphql`
   }
 `
 
-function Blog ({ data }) {
+function About ({ data }) {
   const users = data.swapi.allSpecies
 
   return (
     <Layout>
-      <SEO title='Blog' />
+      <SEO title='About' />
       <S.PostTitle>About authors</S.PostTitle>
       <ul>
         {users.map((user, k) => (
@@ -32,4 +30,4 @@ function Blog ({ data }) {
   )
 }
 
-export default Blog
+export default About

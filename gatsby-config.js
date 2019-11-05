@@ -39,28 +39,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-            options: {
-              name: `uploads`
-            }
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1040,
-              linkImagesToOriginal: false
-            }
-          },
-          `gatsby-remark-lazy-load`,
-          `gatsby-remark-prismjs` // It needs to be the last one
-        ]
-      }
-    },
-    {
       resolve: `gatsby-transformer-prismic`,
       options: {
         plugins: [`gatsby-prismic-lazy-load`]

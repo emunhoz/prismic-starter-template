@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BlogPosts from '../components/BlogPosts'
 
-// Query for the Blog Home content in Prismic
 export const query = graphql`
   {
     prismic {
@@ -22,15 +21,6 @@ export const query = graphql`
             label
             description
             img
-            body {
-              ... on PRISMIC_PostBodyText {
-                type
-                label
-                primary {
-                  text
-                }
-              }
-            }
           }
         }
       }
@@ -38,7 +28,7 @@ export const query = graphql`
   }
 `
 
-const Blog = ({ data }) => {
+function Blog ({ data }) {
   const posts = data.prismic.allPosts.edges
 
   return (
