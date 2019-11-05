@@ -7,19 +7,8 @@ import { ArrowLeft2 } from 'styled-icons/icomoon/ArrowLeft2'
 import { CalendarAlt } from 'styled-icons/boxicons-regular/CalendarAlt'
 import { UserCircle } from 'styled-icons/boxicons-solid/UserCircle'
 
-import Text from '../components/Slices/Text'
-
 function BlogPost ({ data }) {
-  const {
-    title,
-    img,
-    author,
-    label,
-    body
-  } = data.prismic.allPosts.edges[0].node
-
-  console.log(body[0].primary.text, 'body')
-  const text = body[0].primary.text
+  const { title, img, author, label } = data.prismic.allPosts.edges[0].node
 
   return (
     <Layout>
@@ -37,10 +26,6 @@ function BlogPost ({ data }) {
       </S.HeaderInfo>
       <S.PostTitle>{RichText.asText(title)}</S.PostTitle>
       <img src={img.url} alt={img.alt} width='100%' />
-      {text.map((item, k) => (
-        <div key={k}>{RichText.render(item)}</div>
-      ))}
-      <Text />
     </Layout>
   )
 }
@@ -59,14 +44,6 @@ export const pageQuery = graphql`
             img
             _meta {
               uid
-            }
-            body {
-              ... on PRISMIC_PostBodyText {
-                type
-                primary {
-                  text
-                }
-              }
             }
           }
         }
