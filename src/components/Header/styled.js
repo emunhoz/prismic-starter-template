@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 import { Link } from 'gatsby'
 
 export const Header = styled.header`
@@ -7,6 +8,9 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 3em;
+  ${media.lessThan('medium')`
+    padding: 1em;
+  `}
 `
 
 export const Logo = styled(Link)`

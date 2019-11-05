@@ -20,11 +20,12 @@ export const PostSummary = styled.div`
 
 export const Image = styled.img`
   margin-right: 16px;
-  width: 302px;
+  min-width: 302px;
   height: 187px;
 
   ${media.lessThan('medium')`
     width: 100%;
+    min-width: auto;
     height: auto;
     margin-bottom: 20px;
   `}

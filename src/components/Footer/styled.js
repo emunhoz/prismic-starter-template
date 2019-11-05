@@ -10,5 +10,5 @@ export const Footer = styled.footer`
 
 export const MadeWith = styled.p`
   font-weight: 100;
-  font-size: 24px;
+  font-size: 18px;
 `

@@ -44,9 +44,7 @@ const PostSummary = ({ post }) => {
         </S.HeaderInfo>
         <S.Title>
           <Link to={linkResolver(post._meta)}>
-            {RichText.asText(post.title).length !== 0
-              ? RichText.asText(post.title)
-              : null}
+            {RichText.asText(post.title)}
           </Link>
         </S.Title>
         <S.Description>{RichText.render(post.description)}</S.Description>

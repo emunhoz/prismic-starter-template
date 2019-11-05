@@ -8,7 +8,7 @@ export const PostDate = styled.p`
 export const TitlePage = styled.div`
   font-size: 1.5rem;
   line-height: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 `
 
 export const DescriptionPage = styled.div`
