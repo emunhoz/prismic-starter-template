@@ -6,7 +6,7 @@ import * as S from './styled'
 const Header = () => {
   return (
     <S.Header>
-      <S.Logo to='/' />
+      <S.Logo to='/' aria-label='Home' />
       <S.Menu>
         <S.Nav>
           <S.NavLink>

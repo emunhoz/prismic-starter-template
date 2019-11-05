@@ -75,7 +75,7 @@ export const HeaderInfo = styled.header`
 
 export const Label = styled.div`
   border-radius: 5px;
-  background: #27bde8;
+  background: #333;
   display: inline-block;
   padding: 2px 10px;
   width: fit-content;
