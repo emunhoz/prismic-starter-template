@@ -29,9 +29,7 @@ const PostSummary = ({ post }) => {
 
   return (
     <S.PostSummary key={post.id}>
-      {post.img && (
-        <S.Image src={post.img.url} loading='lazy' alt={post.img.alt} />
-      )}
+      {post.img && <S.Image src={post.img.url} alt={post.img.alt} />}
       <S.Info>
         <S.HeaderInfo>
           <S.Label>{post.label}</S.Label>

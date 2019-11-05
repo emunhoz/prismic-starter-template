@@ -14,7 +14,3 @@ export const onServiceWorkerUpdateReady = () => {
     window.location.reload()
   }
 }
-
-export const onRouteUpdate = () => {
-  window.analytics && window.analytics.page()
-}

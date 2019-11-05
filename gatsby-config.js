@@ -77,25 +77,6 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: `gatsby-plugin-segment-js`,
-      options: {
-        // your segment write key for your production environment
-        // when process.env.NODE_ENV === 'production'
-        // required; non-empty string
-        prodKey: `o4dSJa46hrbhmzFR7EoZK1b1yDDSL2rr`,
-
-        // if you have a development env for your segment account, paste that key here
-        // when process.env.NODE_ENV === 'development'
-        // optional; non-empty string
-        devKey: `SEGMENT_DEV_WRITE_KEY`,
-
-        // boolean (defaults to false) on whether you want
-        // to include analytics.page() automatically
-        // if false, see below on how to track pageviews manually
-        trackPage: false
-      }
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
