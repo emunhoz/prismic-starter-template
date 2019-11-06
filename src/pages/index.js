@@ -45,7 +45,10 @@ const Index = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title='Home' />
+        <SEO
+          title='Home'
+          description='Home page about Prismic, Gatsby starter template'
+        />
         <S.TitlePage>
           {RichText.render(data.prismic.allBlog_homes.edges[0].node.headline)}
         </S.TitlePage>

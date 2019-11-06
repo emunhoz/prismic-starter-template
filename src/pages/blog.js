@@ -31,7 +31,7 @@ const Blog = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title='Blog' />
+        <SEO title='Blog' description='Latest posts from blog' />
         <BlogPosts posts={data.prismic.allPosts.edges} />
       </Layout>
     )}
