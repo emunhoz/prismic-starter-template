@@ -5756,6 +5756,13 @@ gatsby-plugin-styled-components@^3.1.8:
   dependencies:
     "@babel/runtime" "^7.6.3"
 
+gatsby-plugin-twitter@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.12.tgz#4d75c6ed79e66dd3ec49658a67a6fb77aba694bd"
+  integrity sha512-PsNa8x6qnVzjOo1icWn2SUIOvQceIxHvUXKQzSkZtC7MUUVuI4pTuv3q5x9F3NlV08z6bP0Q8l0DhbYrjQ03uQ==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+
 gatsby-prismic-lazy-load@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-prismic-lazy-load/-/gatsby-prismic-lazy-load-0.1.1.tgz#9320dc00b2ae1b000f8cbf4eede8bef13aa3fcb8"
@@ -5971,7 +5978,7 @@ gatsby-transformer-sharp@^2.2.20:
     semver "^5.7.1"
     sharp "^0.23.2"
 
-gatsby@^2.17.8:
+gatsby@^2.9.0:
   version "2.17.10"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.17.10.tgz#ad2a946d08c61b2bb99636e36c85ffc27c639f4e"
   integrity sha512-xrKfc67UIMAkVtJj4fS3MK0KUiLvkOfuTZBp6GRXVxMZXuREem3uFnnYD//n+vGHSlYk6c0R1NJ9+2lJClTG2Q==

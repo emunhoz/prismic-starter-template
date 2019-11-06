@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import * as S from './styled'
 
 const Header = () => {

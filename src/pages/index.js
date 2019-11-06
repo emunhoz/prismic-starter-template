@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import BlogPosts from '../components/BlogPosts'
 import * as S from '../styles/base'
 
-const Blog = () => (
+const Index = () => (
   <StaticQuery
     query={graphql`
       {
@@ -62,4 +62,4 @@ const Blog = () => (
   />
 )
 
-export default Blog
+export default Index
