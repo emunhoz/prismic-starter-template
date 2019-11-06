@@ -25,7 +25,7 @@ function SEO ({ description, lang, meta, title, image }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description || ''
+  const metaDescription = description || site.siteMetadata.description
 
   const ogImage =
     image ||
