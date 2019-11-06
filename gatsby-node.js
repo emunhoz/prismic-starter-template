@@ -8,7 +8,7 @@ const wrapper = promise =>
     return result
   })
 
-exports.createPages = async ({ reporter, actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   // Query our blog posts
