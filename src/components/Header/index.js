@@ -10,10 +10,14 @@ const Header = () => {
       <S.Menu>
         <S.Nav>
           <S.NavLink>
-            <Link to='/blog'>Blog</Link>
+            <Link to='/blog' activeClassName='current'>
+              Blog
+            </Link>
           </S.NavLink>
           <S.NavLink>
-            <Link to='/about'>About</Link>
+            <Link to='/about' activeClassName='current'>
+              About
+            </Link>
           </S.NavLink>
         </S.Nav>
       </S.Menu>

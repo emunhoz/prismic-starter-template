@@ -44,11 +44,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #gatsby-focus-wrapper {
-    display: grid;
+    /* display: grid;
     grid-template: "header header header" 140px
                         "main main main" 1fr
                         "footer footer footer" 120px / 1fr;
-    min-height: 100vh;
+    min-height: 100vh; */
   }
 `
 export default GlobalStyles

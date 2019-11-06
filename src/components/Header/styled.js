@@ -37,7 +37,7 @@ export const NavLink = styled.li`
     text-decoration: none;
     font-size: 18px;
     &:hover,
-    &[aria-current] {
+    &.current {
       border-bottom: 5px solid #fe9a53;
       padding-bottom: 20px;
     }
