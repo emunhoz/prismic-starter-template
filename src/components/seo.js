@@ -19,7 +19,6 @@ function SEO ({ description, lang, meta, title, image }) {
             title
             description
             author
-            siteUrl
           }
         }
       }
@@ -28,8 +27,9 @@ function SEO ({ description, lang, meta, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const url = site.siteMetadata.siteUrl
-  const ogImage = `${url}${image || '/assets/img/cover.png'}`
+  const ogImage =
+    image ||
+    'https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format'
 
   return (
     <Helmet
@@ -40,8 +40,16 @@ function SEO ({ description, lang, meta, title, image }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `aplication-name`,
+          content: 'Prismic Starter Template'
+        },
+        {
           name: `description`,
           content: metaDescription
+        },
+        {
+          property: `og:image`,
+          content: ogImage
         },
         {
           property: `og:title`,
@@ -52,12 +60,28 @@ function SEO ({ description, lang, meta, title, image }) {
           content: metaDescription
         },
         {
-          property: `og:image`,
+          property: `og:type`,
+          content: `website`
+        },
+        {
+          name: `twitter:card`,
+          content: `summary_large_image`
+        },
+        {
+          name: `twitter:image:src`,
           content: ogImage
         },
         {
-          property: `og:type`,
-          content: `website`
+          name: `twitter:creator`,
+          content: site.siteMetadata.author
+        },
+        {
+          name: `twitter:title`,
+          content: title
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription
         }
       ].concat(meta)}
     />
@@ -65,9 +89,11 @@ function SEO ({ description, lang, meta, title, image }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-br`,
   meta: [],
-  description: ``
+  description: ``,
+  defaultImage:
+    'https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format'
 }
 
 SEO.propTypes = {
