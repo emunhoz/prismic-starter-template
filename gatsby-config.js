@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://gatsby-prismic-example.netlify.com/`
   },
   plugins: [
+    `gatsby-plugin-nprogress`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
