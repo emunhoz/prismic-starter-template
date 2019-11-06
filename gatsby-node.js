@@ -1,31 +1,37 @@
 const path = require(`path`)
 
+const wrapper = promise =>
+  promise.then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+    return result
+  })
+
 exports.createPages = async ({ reporter, actions, graphql }) => {
   const { createPage } = actions
 
   // Query our blog posts
-  const result = await graphql(`
-    {
-      prismic {
-        allPosts {
-          edges {
-            node {
-              img
-              author
-              _meta {
-                id
-                uid
+  const result = await wrapper(
+    graphql(`
+      {
+        prismic {
+          allPosts {
+            edges {
+              node {
+                img
+                author
+                _meta {
+                  id
+                  uid
+                }
               }
             }
           }
         }
       }
-    }
-  `)
-
-  if (result.errors) {
-    reporter.panic(result.errors)
-  }
+    `)
+  )
 
   const posts = result.data.prismic.allPosts.edges
   const blogTemplate = path.resolve('src/templates/post.js')
