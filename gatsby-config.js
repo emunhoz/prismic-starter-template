@@ -7,6 +7,8 @@ const pluginConfig = [
       name: `images`
     }
   },
+  'gatsby-transformer-sharp',
+  'gatsby-plugin-sharp',
   {
     resolve: `gatsby-source-prismic-graphql`,
     options: {
@@ -30,8 +32,6 @@ const pluginConfig = [
       ]
     }
   },
-  `gatsby-plugin-sharp`,
-  `gatsby-transformer-sharp`,
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
@@ -45,15 +45,15 @@ const pluginConfig = [
     }
   },
   `gatsby-plugin-styled-components`,
-  `gatsby-plugin-netlify`,
   {
     resolve: 'gatsby-plugin-netlify-cache',
     options: {
       cachePublic: true
     }
   },
-  `gatsby-plugin-offline`,
-  `gatsby-plugin-sitemap`
+  `gatsby-plugin-sitemap`,
+  'gatsby-plugin-offline',
+  'gatsby-plugin-netlify'
 ]
 
 module.exports = {
