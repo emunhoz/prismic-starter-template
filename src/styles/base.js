@@ -12,7 +12,7 @@ export const TitlePage = styled.div`
 `
 
 export const DescriptionPage = styled.div`
-  * {
+  > * {
     font-weight: 100;
     margin-bottom: 4.6rem;
     font-size: 24px;

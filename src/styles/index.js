@@ -8,11 +8,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --primary-color: rgb(246, 190, 0);;
+    --primary-color: rgb(246, 190, 0);
   }
 
   a {
-    color: var(--primary-color);
+    color: #b8860b;
     font-weight: 600;
   }
 
