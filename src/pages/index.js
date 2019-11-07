@@ -44,12 +44,8 @@ export const query = graphql`
 `
 
 const Index = ({ data }) => {
-  const doc = data.prismic.allBlog_homes.edges.slice(0, 1).pop()
   const posts = data.prismic.allPosts.edges
-
   const home = data.prismic.allBlog_homes.edges[0].node
-
-  if (!doc) return null
 
   return (
     <Layout>

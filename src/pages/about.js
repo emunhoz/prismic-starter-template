@@ -5,7 +5,7 @@ import * as S from '../styles/base'
 
 const About = () => (
   <Layout>
-    <SEO title='About' description='See more about authors' />
+    <SEO title='About' />
     <S.PostTitle>About authors</S.PostTitle>
     <p>Lorem ipsum dolor sit</p>
   </Layout>

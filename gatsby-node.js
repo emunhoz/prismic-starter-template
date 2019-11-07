@@ -27,7 +27,6 @@ exports.createPages = async ({ actions, graphql }) => {
   const blogTemplate = path.resolve('src/templates/post.js')
 
   posts.forEach(edge => {
-    // Create a page for each blog post
     createPage({
       path: `/${edge.node._meta.uid}`,
       component: blogTemplate,
