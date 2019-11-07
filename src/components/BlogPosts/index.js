@@ -4,8 +4,17 @@ import { RichText, Date } from 'prismic-reactjs'
 import { linkResolver } from '../../utils/linkResolver'
 import { CalendarAlt } from 'styled-icons/boxicons-regular/CalendarAlt'
 import { UserCircle } from 'styled-icons/boxicons-solid/UserCircle'
+import ReactGA from 'react-ga'
 
 import * as S from './styled'
+
+const courseClickTrack = title => {
+  ReactGA.event({
+    category: 'psot',
+    action: 'click',
+    label: `Link Post - ${title}`
+  })
+}
 
 const BlogPosts = ({ posts }) => (
   <>
@@ -40,7 +49,7 @@ const PostSummary = ({ post }) => {
             <UserCircle /> {post.author}
           </S.Author>
         </S.HeaderInfo>
-        <S.Title>
+        <S.Title onClick={() => courseClickTrack(post.title)}>
           <Link to={linkResolver(post._meta)}>
             {RichText.asText(post.title)}
           </Link>
