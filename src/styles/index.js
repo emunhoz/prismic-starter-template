@@ -8,7 +8,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --primary-color: gray;
+    --primary-color: rgb(246, 190, 0);;
+  }
+
+  a {
+    color: var(--primary-color);
+    font-weight: 600;
   }
 
   ul {
@@ -41,14 +46,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     color: #333;
     height: 100%;
-  }
-
-  #gatsby-focus-wrapper {
-    /* display: grid;
-    grid-template: "header header header" 140px
-                        "main main main" 1fr
-                        "footer footer footer" 120px / 1fr;
-    min-height: 100vh; */
   }
 `
 export default GlobalStyles

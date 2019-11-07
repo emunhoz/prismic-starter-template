@@ -17,7 +17,7 @@ export const Logo = styled(Link)`
   width: 100px;
   height: 20px;
   display: inline-block;
-  background: #5393fe;
+  background: var(--primary-color);
 `
 
 export const Menu = styled.nav`
@@ -38,7 +38,7 @@ export const NavLink = styled.li`
     font-size: 18px;
     &:hover,
     &.current {
-      border-bottom: 5px solid #fe9a53;
+      border-bottom: 5px solid var(--primary-color);
       padding-bottom: 20px;
     }
   }
