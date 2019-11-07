@@ -1,10 +1,5 @@
 const pluginConfig = [
-  `gatsby-plugin-twitter`,
   `gatsby-plugin-react-helmet`,
-  `gatsby-transformer-json`,
-  `gatsby-plugin-sharp`,
-  `gatsby-transformer-sharp`,
-  `gatsby-remark-prismjs`,
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -16,13 +11,6 @@ const pluginConfig = [
     resolve: `gatsby-source-prismic-graphql`,
     options: {
       repositoryName: 'gatsby-prismic-escale'
-    }
-  },
-  `gatsby-plugin-netlify`,
-  {
-    resolve: 'gatsby-plugin-netlify-cache',
-    options: {
-      cachePublic: true
     }
   },
   {
@@ -42,7 +30,8 @@ const pluginConfig = [
       ]
     }
   },
-  `gatsby-plugin-styled-components`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
@@ -55,10 +44,16 @@ const pluginConfig = [
       icon: `src/images/gatsby-icon.png`
     }
   },
-  `gatsby-plugin-sitemap`,
-  // this (optional) plugin enables Progressive Web App + Offline functionality
-  // To learn more, visit: https://gatsby.dev/offline
-  `gatsby-plugin-offline`
+  `gatsby-plugin-styled-components`,
+  `gatsby-plugin-netlify`,
+  {
+    resolve: 'gatsby-plugin-netlify-cache',
+    options: {
+      cachePublic: true
+    }
+  },
+  `gatsby-plugin-offline`,
+  `gatsby-plugin-sitemap`
 ]
 
 module.exports = {
