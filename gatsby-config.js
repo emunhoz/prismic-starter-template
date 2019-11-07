@@ -55,10 +55,10 @@ const pluginConfig = [
       icon: `src/images/gatsby-icon.png`
     }
   },
+  `gatsby-plugin-sitemap`,
   // this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
-  `gatsby-plugin-offline`,
-  `gatsby-plugin-sitemap`
+  `gatsby-plugin-offline`
 ]
 
 module.exports = {
