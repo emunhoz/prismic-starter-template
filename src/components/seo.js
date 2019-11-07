@@ -11,7 +11,7 @@ import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO ({ description, lang, meta, title, image }) {
-  const { site } = useStaticQuery(
+  useStaticQuery(
     graphql`
       {
         site {
@@ -25,11 +25,11 @@ function SEO ({ description, lang, meta, title, image }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description
 
   const ogImage =
     image ||
-    'https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format'
+    `https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format`
 
   return (
     <Helmet
@@ -37,7 +37,7 @@ function SEO ({ description, lang, meta, title, image }) {
         lang
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${metaDescription}`}
       meta={[
         {
           name: `aplication-name`,
@@ -73,7 +73,7 @@ function SEO ({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: 'Prismic Gatsby Author name'
         },
         {
           name: `twitter:title`,
@@ -93,7 +93,7 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   defaultImage:
-    'https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format'
+    `https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format`
 }
 
 SEO.propTypes = {
