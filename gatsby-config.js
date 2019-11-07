@@ -1,6 +1,3 @@
-const { apiEndpoint } = require('./prismic-config')
-var repo = /([^\/]+)\.prismic\.io\/graphql/.exec(apiEndpoint)
-
 module.exports = {
   siteMetadata: {
     title: `Prismic Start Template`,
@@ -11,10 +8,10 @@ module.exports = {
   plugins: [
     `gatsby-plugin-twitter`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
     `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-remark-prismjs`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -52,7 +49,7 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -67,6 +64,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`
   ]
 }
