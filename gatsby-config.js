@@ -38,6 +38,12 @@ const pluginConfig = [
     }
   },
   {
+    resolve: `gatsby-transformer-prismic`,
+    options: {
+      plugins: [`gatsby-prismic-lazy-load`]
+    }
+  },
+  {
     resolve: `gatsby-plugin-prefetch-google-fonts`,
     options: {
       fonts: [
