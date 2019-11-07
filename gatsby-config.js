@@ -25,8 +25,14 @@ module.exports = {
     {
       resolve: `gatsby-source-prismic-graphql`,
       options: {
-        repositoryName: repo[1], // Loads the repo name from prismic configuration
-        linkResolver: () => post => `/${post.uid}`
+        repositoryName: 'gatsby-prismic-escale'
+      }
+    },
+    `gatsby-plugin-netlify`,
+    {
+      resolve: 'gatsby-plugin-netlify-cache',
+      options: {
+        cachePublic: true
       }
     },
     {
