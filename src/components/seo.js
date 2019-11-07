@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 function SEO ({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
-      {
+      query {
         site {
           siteMetadata {
             title
@@ -24,12 +24,14 @@ function SEO ({ description, lang, meta, title, image }) {
       }
     `
   )
+  console.log(site, 'data')
+  console.log(site.siteMetadata, 'data')
 
   const metaDescription = description || site.siteMetadata.description
 
   const ogImage =
     image ||
-    `https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format`
+    'https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format'
 
   return (
     <Helmet
@@ -93,7 +95,7 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   defaultImage:
-    `https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format`
+    'https://images.prismic.io/gatsby-prismic-escale/d26b3295-5304-4c14-b9a9-57e5478c08f7_blog-image.png?auto=compress,format'
 }
 
 SEO.propTypes = {
