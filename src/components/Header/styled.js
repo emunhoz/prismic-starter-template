@@ -38,7 +38,7 @@ export const NavLink = styled.li`
     font-size: 18px;
     &:hover,
     &.current {
-      border-bottom: 5px solid var(--primary-color);
+      border-bottom: 5px solid var(--secondary-color);
       padding-bottom: 20px;
     }
   }

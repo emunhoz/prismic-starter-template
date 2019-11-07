@@ -67,8 +67,19 @@ export const BtnLink = styled(Link)`
   padding: 10px 20px;
   color: #333;
   font-size: 20px;
-  -webkit-text-decoration: none;
-  -webkit-text-decoration: none;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+`
+
+export const Btn = styled.button`
+  border-radius: 5px;
+  border: 1px solid #333;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 20px;
   text-decoration: none;
   &:hover {
     opacity: 0.8;
@@ -84,4 +95,8 @@ export const Alert = styled.div`
   font-size: 24px;
   background: #fe5454;
   margin-bottom: 40px;
+`
+
+export const Code = styled.code`
+  word-break: break-all;
 `

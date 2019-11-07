@@ -9,10 +9,11 @@ const GlobalStyles = createGlobalStyle`
 
   :root {
     --primary-color: rgb(246, 190, 0);
+    --secondary-color: #b8860b;
   }
 
   a {
-    color: #b8860b;
+    color: var(--secondary-color);
     font-weight: 600;
   }
 
