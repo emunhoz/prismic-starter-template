@@ -6,6 +6,7 @@ const pluginConfig = [
     resolve: `gatsby-source-prismic-graphql`,
     options: {
       repositoryName: 'gatsby-prismic-escale',
+      previews: true,
       linkResolver: () => post => `/${post.uid}`
     }
   },
