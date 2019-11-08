@@ -5,6 +5,7 @@ import * as S from '../styles/base'
 import { graphql } from 'gatsby'
 import { CalendarAlt } from 'styled-icons/boxicons-regular/CalendarAlt'
 import { UserCircle } from 'styled-icons/boxicons-solid/UserCircle'
+import SEO from '../components/seo'
 
 function BlogPost ({ data }) {
   const {
@@ -17,10 +18,9 @@ function BlogPost ({ data }) {
 
   const text = body[0].primary.text
 
-  console.log(text)
-
   return (
     <Layout>
+      <SEO title={RichText.asText(title)} />
       <S.HeaderInfo>
         <S.Time>{label}</S.Time>
         <span>
