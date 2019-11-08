@@ -52,7 +52,8 @@ const GlobalStyles = createGlobalStyle`
       --text-highlight: #01aeff;
       --background-post: #fff;
       --primary-color: #f6be00;
-      --secondary-color: #00aa55; 
+      --secondary-color: #00aa55;
+      --border-light: rgba(0, 0, 0, 0.1);
     }
     &.dark {
       --body-bg: rgb(30, 39, 47);
@@ -61,6 +62,7 @@ const GlobalStyles = createGlobalStyle`
       --background-post: #26343e;
       --primary-color: #f6be00;
       --secondary-color: #00aa55;
+      --border-light: #9ed4ff7a;
       background: var(--body-bg);
     }
   }

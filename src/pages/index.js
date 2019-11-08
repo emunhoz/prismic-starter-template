@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BlogPosts from '../components/BlogPosts'
 import * as S from '../styles/base'
-import Loading from '../components/Loading'
 
 // Query for the Blog Home content in Prismic
 export const query = graphql`
