@@ -1,7 +1,12 @@
 import React from 'react'
 import Loadable from 'react-loadable'
+import * as S from './styled'
 
-const Loading = () => <div>Loading...</div>
+const Loading = () => (
+  <S.Wrapper>
+    <S.Loading />
+  </S.Wrapper>
+)
 
 Loadable({
   loader: () => import('./WillFailToLoad'), // oh no!

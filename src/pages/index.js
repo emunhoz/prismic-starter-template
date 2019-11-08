@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BlogPosts from '../components/BlogPosts'
 import * as S from '../styles/base'
+import Loading from '../components/Loading'
 
 // Query for the Blog Home content in Prismic
 export const query = graphql`
@@ -50,6 +51,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title='Home' />
+      <Loading />
       <S.TitlePage>{RichText.render(home.headline)}</S.TitlePage>
       <S.DescriptionPage>{RichText.render(home.description)}</S.DescriptionPage>
       <S.LatestPosts>Latest posts</S.LatestPosts>
