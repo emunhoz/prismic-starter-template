@@ -78,12 +78,14 @@ const pluginConfig = [
   `gatsby-plugin-sitemap`
 ]
 
-if (process.env.CONTEXT === 'production') {
+console.log(process.env.NODE_ENV, 'asdasdasd')
+
+if (process.env && process.env.NODE_ENV !== 'development') {
   const analytics = {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
-      trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      head: false
+      trackingId: 'UA-151720477-1',
+      head: true
     }
   }
 
