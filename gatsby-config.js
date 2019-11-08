@@ -74,11 +74,9 @@ const pluginConfig = [
       cachePublic: true
     }
   },
-  `gatsby-plugin-offline`,
-  `gatsby-plugin-sitemap`
+  `gatsby-plugin-sitemap`,
+  `gatsby-plugin-offline`
 ]
-
-console.log(process.env.NODE_ENV, 'asdasdasd')
 
 if (process.env && process.env.NODE_ENV !== 'development') {
   const analytics = {

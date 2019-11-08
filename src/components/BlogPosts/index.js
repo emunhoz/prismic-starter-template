@@ -10,7 +10,7 @@ import * as S from './styled'
 
 const courseClickTrack = title => {
   ReactGA.event({
-    category: 'psot',
+    category: 'post',
     action: 'click',
     label: `Link Post - ${title}`
   })
@@ -51,7 +51,7 @@ const PostSummary = ({ post }) => {
             <UserCircle /> {post.author}
           </S.Author>
         </S.HeaderInfo>
-        <S.Title onClick={() => courseClickTrack(post.title)}>
+        <S.Title onClick={() => courseClickTrack(RichText.asText(post.title))}>
           <Link to={linkResolver(post._meta)}>
             {RichText.asText(post.title)}
           </Link>
