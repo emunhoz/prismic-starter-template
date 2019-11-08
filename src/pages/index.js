@@ -51,7 +51,6 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title='Home' />
-      <Loading />
       <S.TitlePage>{RichText.render(home.headline)}</S.TitlePage>
       <S.DescriptionPage>{RichText.render(home.description)}</S.DescriptionPage>
       <S.LatestPosts>Latest posts</S.LatestPosts>

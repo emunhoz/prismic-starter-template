@@ -105,6 +105,13 @@ export const Code = styled.code`
   word-break: break-all;
 `
 
+export const SearchWrapper = styled.div`
+  display: flex;
+  input {
+    margin-right: 10px;
+  }
+`
+
 export const Avatar = styled.img`
   max-width: 416px;
   width: 100%;
