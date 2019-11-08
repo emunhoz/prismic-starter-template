@@ -39,7 +39,13 @@ const PostSummary = ({ post }) => {
   return (
     <S.PostSummary key={post.id}>
       {post.img && (
-        <S.Image src={post.img.url} loading='lazy' alt={post.img.alt} />
+        <S.Image
+          src={post.img.url}
+          loading='lazy'
+          height='693'
+          width='462'
+          alt={post.img.alt}
+        />
       )}
       <S.Info>
         <S.HeaderInfo>
