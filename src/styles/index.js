@@ -8,13 +8,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --primary-color: rgb(246, 190, 0);
-    --secondary-color: #b8860b;
-  }
-
-  a {
-    color: var(--secondary-color);
-    font-weight: 600;
+    --primary-color: #f6be00;
+    --secondary-color: #00aa55;
   }
 
   ul {
@@ -23,6 +18,10 @@ const GlobalStyles = createGlobalStyle`
       font-weight: 100;
       font-size: 24px;
     }
+  }
+
+  img {
+    max-width: 708px;
   }
   
   input {
@@ -33,6 +32,8 @@ const GlobalStyles = createGlobalStyle`
     font-size: 24px;
     font-weight: 200;
   }
+
+
 
   body {
     margin: 0;
@@ -45,8 +46,25 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.9;
     font-weight: 400;
-    color: #333;
+    color: var(--text);
     height: 100%;
+    &.light {
+      --body-bg: rgb(30, 39, 47);
+      --text: #333;
+      --text-highlight: #01aeff;
+      --background-post: #fff;
+      --primary-color: #f6be00;
+      --secondary-color: #00aa55; 
+    }
+    &.dark {
+      --body-bg: rgb(30, 39, 47);
+      --text: #9ed4ff;
+      --text-highlight: #01aeff;
+      --background-post: #26343e;
+      --primary-color: #f6be00;
+      --secondary-color: #00aa55;
+      background: var(--body-bg);
+    }
   }
 `
 export default GlobalStyles

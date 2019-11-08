@@ -3,7 +3,6 @@ import { RichText } from 'prismic-reactjs'
 import Layout from '../components/Layout'
 import * as S from '../styles/base'
 import { graphql } from 'gatsby'
-import { ArrowLeft2 } from 'styled-icons/icomoon/ArrowLeft2'
 import { CalendarAlt } from 'styled-icons/boxicons-regular/CalendarAlt'
 import { UserCircle } from 'styled-icons/boxicons-solid/UserCircle'
 
@@ -12,9 +11,6 @@ function BlogPost ({ data }) {
 
   return (
     <Layout>
-      <S.LinkBack to='/'>
-        <ArrowLeft2 />
-      </S.LinkBack>
       <S.HeaderInfo>
         <S.Time>{label}</S.Time>
         <span>

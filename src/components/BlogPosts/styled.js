@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 
 export const PostSummary = styled.div`
   display: flex;
-  background: #ffffff;
+  background: var(--background-post);
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
   padding: 16px;
@@ -36,7 +36,7 @@ export const Title = styled.h2`
   line-height: 30px;
   margin-bottom: 17px;
   a {
-    color: #333;
+    color: inherit;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -76,10 +76,11 @@ export const HeaderInfo = styled.header`
 
 export const Label = styled.div`
   border-radius: 5px;
-  background: #333;
+  background: #1a4763;
   display: inline-block;
   padding: 2px 10px;
   width: fit-content;
+  font-weight: 600;
   color: #fff;
 `
 

@@ -12,10 +12,14 @@ export const TitlePage = styled.div`
 `
 
 export const DescriptionPage = styled.div`
-  > * {
+  p {
     font-weight: 100;
     margin-bottom: 4.6rem;
     font-size: 24px;
+    a {
+      color: var(--secondary-color);
+      font-weight: 600;
+    }
   }
 `
 
@@ -25,7 +29,7 @@ export const LatestPosts = styled.h3`
 `
 
 export const LinkBack = styled(Link)`
-  color: #333;
+  color: inherit;
   display: block;
   margin-bottom: 40px;
   &:hover {
@@ -53,7 +57,7 @@ export const HeaderInfo = styled.header`
 
 export const Time = styled.time`
   border-radius: 5px;
-  background: #27bde8;
+  background: #1a4763;
   display: inline-block;
   padding: 2px 10px;
   width: fit-content;
@@ -65,7 +69,7 @@ export const BtnLink = styled(Link)`
   border: 1px solid #333;
   display: inline-block;
   padding: 10px 20px;
-  color: #333;
+  color: inherit;
   font-size: 20px;
   text-decoration: none;
   &:hover {
@@ -99,4 +103,9 @@ export const Alert = styled.div`
 
 export const Code = styled.code`
   word-break: break-all;
+`
+
+export const Avatar = styled.img`
+  max-width: 416px;
+  width: 100%;
 `

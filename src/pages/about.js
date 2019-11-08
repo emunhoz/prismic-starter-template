@@ -29,7 +29,7 @@ const About = () => {
       <S.Code>{JSON.stringify(user)}</S.Code>
       <hr />
       <p>{user.login}</p>
-      <img src={user.avatar_url} alt='avatar' />
+      <S.Avatar src={user.avatar_url} alt='avatar' />
       <span>Has error: {JSON.stringify(hasError)}</span>
       <p>Lorem ipsum dolor sit</p>
     </Layout>
