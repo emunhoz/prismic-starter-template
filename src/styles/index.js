@@ -33,8 +33,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 200;
   }
 
-
-
   body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;

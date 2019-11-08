@@ -7,7 +7,17 @@ import { CalendarAlt } from 'styled-icons/boxicons-regular/CalendarAlt'
 import { UserCircle } from 'styled-icons/boxicons-solid/UserCircle'
 
 function BlogPost ({ data }) {
-  const { title, img, author, label } = data.prismic.allPosts.edges[0].node
+  const {
+    title,
+    img,
+    author,
+    label,
+    body
+  } = data.prismic.allPosts.edges[0].node
+
+  const text = body[0].primary.text
+
+  console.log(text)
 
   return (
     <Layout>
@@ -22,6 +32,7 @@ function BlogPost ({ data }) {
       </S.HeaderInfo>
       <S.PostTitle>{RichText.asText(title)}</S.PostTitle>
       <img src={img.url} alt={img.alt} width='100%' />
+      <S.MainContent>{RichText.render(text)}</S.MainContent>
     </Layout>
   )
 }
@@ -38,6 +49,13 @@ export const pageQuery = graphql`
             author
             description
             img
+            body {
+              ... on PRISMIC_PostBodyText {
+                primary {
+                  text
+                }
+              }
+            }
             _meta {
               uid
             }
