@@ -42,11 +42,14 @@ The main purpose is for developers to build their applications without worrying 
 
 ### When
 **Start date**: 04/11/2019
+
 **End date**: 10/11/2019
 
 ### Who
 **Author**: [Eder Munhoz dos Santos](https://github.com/emunhoz)
+
 **Team**: Health Growth
+
 **Jira card**: [HEAL-56](https://escale.atlassian.net/browse/HEAL-56)
 
 ### Links
