@@ -96,7 +96,7 @@ module.exports = {
     title: `Prismic Start Template`,
     description: `A template made with Gatsby and Prismic 🚀`,
     author: `Prismic Start Template`,
-    siteUrl: `https://gatsby-prismic-example.netlify.com/`
+    siteUrl: `https://prismic-starter-template.netlify.com/`
   },
   plugins: pluginConfig
 }
