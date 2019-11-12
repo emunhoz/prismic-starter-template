@@ -6,23 +6,12 @@
 
 ### Latest report
 ![Latest report from audits](reports/latest-audits-report.png)
-You can see more [here](reports/prismic-starter-template.netlify.com-20191112T022538.json)
+You can see more [details here](reports/prismic-starter-template.netlify.com-20191112T022538.json)
 
 ### Why GatsbyJS?
 [Gatsby](https://www.gatsbyjs.org/) is a powerful site generator for React.
 
 The main purpose is for developers to build their applications without worrying about performance as it does all this work very well.
-
-### What I've inclued
-
-- Prismic as headless CMS
- - Internal router navigation with [Gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/)
- - Github external API
- - [react-helmet](https://github.com/nfl/react-helmet) to improve readability by search engines and social media crawlers
- - Google Analytics Module with [react-ga](https://github.com/react-ga/react-ga)
- - Code splitting with [react-loadable](https://github.com/jamiebuilds/react-loadable)
- - Dark-mode theme
- - PWA 100% working with [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) for register SW and manifest with [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/)
 
 #### **Good parts** 👍
 
@@ -38,6 +27,17 @@ The main purpose is for developers to build their applications without worrying 
 - Gatsby working with Prismic needs a webhook to update content
 - You may have difficulty if you are unfamiliar with React and GraphQL
 - `gatsby-source-prismic-graphql`  does not support useStaticQuery hooks yet (for SEO.js component you can use `StaticQuery` instead)
+
+### What I've inclued
+
+- Prismic as headless CMS
+ - Internal router navigation with [Gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/)
+ - Github external API
+ - [react-helmet](https://github.com/nfl/react-helmet) to improve readability by search engines and social media crawlers
+ - Google Analytics Module with [react-ga](https://github.com/react-ga/react-ga)
+ - Code splitting with [react-loadable](https://github.com/jamiebuilds/react-loadable)
+ - Dark-mode theme
+ - PWA 100% working with [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/) for register SW and manifest with [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/)
 
 
 ### When
