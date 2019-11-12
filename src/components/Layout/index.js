@@ -6,11 +6,7 @@ import GlobalStyles from '../../styles'
 import * as S from './styled'
 import Loadable from 'react-loadable'
 import Loading from '../Loading'
-
-const Header = Loadable({
-  loader: () => import('../Header'),
-  loading: Loading
-})
+import Header from '../Header'
 
 const Footer = Loadable({
   loader: () => import('../Footer'),
